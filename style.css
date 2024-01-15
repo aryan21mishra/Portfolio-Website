@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    overflow-y: auto;
+}
+
+a {
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 2rem;
+    text-shadow: 0 0 4px white;
+}
+
+.flex {
+    display: flex;
+}
+
+.align-items {
+    align-items: center;
+}
+
+.justify-content {
+    justify-content: center;
+}
+
+.flex-direction {
+    flex-direction: column;
+}
+
+.container {
+    max-width: 1359vw;
+    background-color: black;
+    padding: 0 120px;
+}
+
+.nav-bar {
+    height: 70px;
+    background-color: black;
+    justify-content: space-between;
+    overflow: hidden;
+    box-shadow: 0 0 10px black;
+}
+
+.logo {
+    width: 80px;
+    height: 100%;
+}
+
+.nav-icon {
+    display: none;
+}
+
+.nav-links {
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    transition: all ease 0.3s;
+}
+
+.nav-links a:hover {
+    scale: 1.2;
+    color: rgb(168, 148, 122);
+}
+
+
+.main-section {
+    height: 100vh;
+    justify-content: space-between;
+}
+
+.left-box {
+    color: white;
+    width: 50%;
+    height: 50%;
+    gap: 14px;
+}
+
+.about {
+    gap: 10px;
+}
+
+.about span {
+    text-shadow: none;
+    color: #0047ab;
+    font-family: 'Roboto', sans-serif;
+}
+
+.social-media {
+    gap: 20px;
+}
+
+.social-media-box {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid white;
+    transition: all ease 0.3s;
+}
+
+.social-media-box:hover {
+    transform: scale(1.1);
+}
+
+.fb {
+    background-color: #3b5998;
+}
+
+.insta {
+    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+}
+
+.tele {
+    background-color: white;
+}
+
+.right-box {
+    width: 50%;
+    height: 350px;
+    position: relative;
+}
+
+#photo {
+    z-index: 1;
+    border-radius: 50%;
+    transition: all ease-out 0.3s;
+    box-shadow: 0 0 10px white;
+}
+
+#photo:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.right-box::before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    width: 350px;
+    height: 100%;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0 0 10px white;
+}
+
+.right-box::after {
+    content: "";
+    z-index: 0;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    overflow: hidden;
+    animation: rotate 4s linear infinite;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+}
